@@ -1,23 +1,24 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Page = () => {
   return (
     <div>
       <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-        <img
+        <Image
           className="w-24 h-24 md:rounded-full rounded-full mx-auto"
           src="/saad.a.jpeg"
           alt="Saad Nadeem"
-          width="384"
-          height="512"
+          width={384}
+          height={512}
         />
         <div className="pt-6 md:p-8 text-center space-y-4">
           <blockquote>
             <p className="text-lg font-medium">
-              “Hey, I'm Saad Nadeem, a student in FSc Part 2.
-              I'm interested in pursuing further studies in AI
+              &ldquo;Hey, I&apos;m Saad Nadeem, a student in FSc Part 2.
+              I&apos;m interested in pursuing further studies in AI
               because of the increasing digitalization of the world.
-              It's exciting to be part of this transformative field!”
+              It&apos;s exciting to be part of this transformative field!&rdquo;
             </p>
           </blockquote>
           <figcaption className="font-medium">
